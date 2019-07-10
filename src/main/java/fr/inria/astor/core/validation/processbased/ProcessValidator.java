@@ -80,7 +80,7 @@ public class ProcessValidator extends ProgramVariantValidator {
 			log.debug(trfailing);
 			if (trfailing.wasSuccessful() || forceExecuteRegression) {
 				//return runRegression(mutatedVariant, projectFacade, bc);
-			  return new TestCasesProgramValidationResult(trfailing, trfailing.wasSuccessful(), true)
+			  return new TestCasesProgramValidationResult(trfailing, trfailing.wasSuccessful(), true);
 			} else {
 				TestCaseVariantValidationResult r = new TestCasesProgramValidationResult(trfailing,
 						trfailing.wasSuccessful(), false);
